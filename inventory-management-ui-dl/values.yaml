@@ -1,0 +1,11 @@
+global:
+  ingressSubdomain: mooc-cpat-ocp01-cluster.us-south.containers.appdomain.cloud
+  tlsSecretName: mooc-cpat-ocp01-cluster
+
+inventory-management-ui-dl:
+  replicaCount: 3
+  
+  ingress:
+    enabled: true
+    tlsSecretName: mooc-cpat-ocp01-cluster
+
